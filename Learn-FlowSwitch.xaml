@@ -1,0 +1,175 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="LearnFlowSwitch" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1039,852" sap2010:WorkflowViewState.IdRef="LearnFlowSwitch_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="42">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart DisplayName="LearnFlowSwitch" sap:VirtualizedContainerService.HintSize="1049,655" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart.Variables>
+      <Variable x:TypeArguments="x:String" Name="Citizen" />
+    </Flowchart.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">470,2.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,75</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">500,77.5 500,107.5 499.895,107.5 499.895,127.5</av:PointCollection>
+        <x:Double x:Key="Width">1015</x:Double>
+        <x:Double x:Key="Height">619.07999999999993</x:Double>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID5</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID5">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">368.895,127.5</av:Point>
+          <av:Size x:Key="ShapeSize">262,60</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">499.895,187.5 499.895,237.5</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[Citizen]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">TaxPayer</InArgument>
+        </Assign.Value>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Assign>
+      <FlowStep.Next>
+        <FlowSwitch x:TypeArguments="x:String" x:Name="__ReferenceID0" DisplayName="Flow Switch" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowSwitch`1_1">
+          <FlowSwitch.Default>
+            <FlowStep x:Name="__ReferenceID1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">5.01666666666667,409.02</av:Point>
+                  <av:Size x:Key="ShapeSize">230,61</av:Size>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="Hmm... Thanks for being someone">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </WriteLine>
+            </FlowStep>
+          </FlowSwitch.Default>
+          <FlowSwitch.Expression>
+            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Citizen" />
+          </FlowSwitch.Expression>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:Point x:Key="ShapeLocation">464.895,237.5</av:Point>
+              <av:Size x:Key="ShapeSize">70,87</av:Size>
+              <av:PointCollection x:Key="Default">464.895,281 120.016666666667,281 120.016666666667,409.02</av:PointCollection>
+              <av:PointCollection x:Key="StudentConnector">499.895,324.5 499.895,354.5 400,354.5 400,409.5</av:PointCollection>
+              <av:PointCollection x:Key="TaxPayerConnector">534.895,302.75 660,302.75 660,409.5</av:PointCollection>
+              <av:PointCollection x:Key="SrCitizenConnector">534.895,281 900,281 900,409.5</av:PointCollection>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <FlowStep x:Key="Student" x:Name="__ReferenceID2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:Point x:Key="ShapeLocation">285,409.5</av:Point>
+                <av:Size x:Key="ShapeSize">230,61</av:Size>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,61" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="Study hard, Play strong">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </WriteLine>
+          </FlowStep>
+          <FlowStep x:Key="TaxPayer" x:Name="__ReferenceID3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:Point x:Key="ShapeLocation">545,409.5</av:Point>
+                <av:Size x:Key="ShapeSize">230,61</av:Size>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,61" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="Thanks for your taxes">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </WriteLine>
+          </FlowStep>
+          <FlowStep x:Key="SrCitizen" x:Name="__ReferenceID4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:Point x:Key="ShapeLocation">785,409.5</av:Point>
+                <av:Size x:Key="ShapeSize">230,61</av:Size>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,61" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="Thanks for your hard work">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </WriteLine>
+          </FlowStep>
+        </FlowSwitch>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
+    <x:Reference>__ReferenceID2</x:Reference>
+    <x:Reference>__ReferenceID3</x:Reference>
+    <x:Reference>__ReferenceID4</x:Reference>
+  </Flowchart>
+</Activity>

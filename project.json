@@ -1,0 +1,67 @@
+{
+  "name": "P01-FirstProject",
+  "description": "First UiPath Project",
+  "main": "Main.xaml",
+  "dependencies": {
+    "Microsoft.Activities.Extensions": "[2.0.6.9]",
+    "UiPath.Excel.Activities": "[2.12.3]",
+    "UiPath.Mail.Activities": "[1.15.2]",
+    "UiPath.System.Activities": "[22.4.1]",
+    "UiPath.UIAutomation.Activities": "[22.4.6]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.4.3.0",
+  "projectVersion": "1.0.2",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "fc514e09-2a9d-4461-a712-862e170a8cd7",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "DataExtraction-Structured.xaml",
+      "uniqueId": "2275e0da-37d9-4227-a0b6-1392e55d77aa",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {
+    "iconUrl": ".package/Ericsson - 1200px-Ericsson_(2018).svg.png"
+  },
+  "targetFramework": "Legacy"
+}
